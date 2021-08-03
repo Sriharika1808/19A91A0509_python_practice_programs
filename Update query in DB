@@ -1,0 +1,16 @@
+SQLite version 3.36.0 2021-06-18 18:36:39 
+Enter ".help" for usage hints. 
+Connected to a transient in-memory database. 
+Use ".open FILENAME" to reopen on a persistent database. 
+sqlite> create table faculty(fid integer,fname text,fsub text,fexp real); 
+sqlite> insert into faculty values(666,'A Vanathi','CO',18); 
+sqlite> insert into faculty values(666,'devi priya','python',14); 
+sqlite> insert into faculty values(567,'vydehi','python',15); 
+sqlite> insert into faculty values(678,'kumar','co',18); 
+sqlite> update faculty set fid=334 where fexp=14; 
+sqlite> update faculty set fsub='JAVA' where fid=334; 
+sqlite> select * from faculty; 
+666|A Vanathi|CO|18.0 
+334|devi priya|JAVA|14.0 
+567|vydehi|python|15.0 
+678|kumar|co|18.0
